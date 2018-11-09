@@ -26,7 +26,7 @@ function sendmail($subject,$message){
     $mail->isSMTP();							//Tell PHPMailer to use SMTP
     $mail->SMTPDebug = 0;						//Enable SMTP debugging // 0 = off (for production use), 1 = client messages, 2 = client and server messages
     $mail->Host = 'smtp.gmail.com';				//Set the hostname of the mail server
-    $mail->Port = 465;							//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+    $mail->Port = 587;							//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
     $mail->SMTPSecure = 'tls';					//Set the encryption system to use - ssl (deprecated) or tls
     $mail->SMTPAuth = true;						//Whether to use SMTP authentication
     $mail->Username = "geethaacwd@gmail.com";	//Username to use for SMTP authentication - use full email address for gmail
